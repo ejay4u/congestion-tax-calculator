@@ -6262,8 +6262,8 @@
     },
     "congestion-tax-calculator/1.0.0": {
       "type": "project",
-      "path": "../../netcore/congestion-tax-calculator.csproj",
-      "msbuildProject": "../../netcore/congestion-tax-calculator.csproj"
+      "path": "../../application/congestion-tax-calculator.csproj",
+      "msbuildProject": "../../application/congestion-tax-calculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6312,8 +6312,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj": {
-              "projectPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj"
+            "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj": {
+              "projectPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj"
             }
           }
         }

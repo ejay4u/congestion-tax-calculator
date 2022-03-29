@@ -4,14 +4,14 @@
     "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\tests\\Congestion-tax-calculator.UnitTests\\Congestion-tax-calculator.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj": {
+    "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj",
+        "projectUniqueName": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj",
         "projectName": "congestion-tax-calculator",
-        "projectPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj",
+        "projectPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj",
         "packagesPath": "C:\\Users\\jude.abormegah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\obj\\",
+        "outputPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -96,8 +96,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj": {
-                "projectPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\netcore\\congestion-tax-calculator.csproj"
+              "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj": {
+                "projectPath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\application\\congestion-tax-calculator.csproj"
               }
             }
           }

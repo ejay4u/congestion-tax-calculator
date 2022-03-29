@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "IsExternalInit/1.0.2": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/cs/netstandard2.0/IsExternalInit/IsExternalInit.cs.pp": {
+            "buildAction": "Compile",
+            "codeLanguage": "cs",
+            "copyToOutput": false,
+            "ppOutputPath": "IsExternalInit/IsExternalInit.cs"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "IsExternalInit/1.0.2": {
+      "sha512": "Vcztz9HRFvJfpjobZy6fqFVtd8bqQ1KCHp5jQBlqA6q3tu7HVp122g0ESxM/V7uqsCvbub55mCybHC7E96Uunw==",
+      "type": "package",
+      "path": "isexternalinit/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net20/IsExternalInit/IsExternalInit.cs.pp",
+        "content/net40/IsExternalInit/IsExternalInit.cs.pp",
+        "content/net5.0/IsExternalInit/IsExternalInit.cs.pp",
+        "content/netstandard1.0/IsExternalInit/IsExternalInit.cs.pp",
+        "content/netstandard2.0/IsExternalInit/IsExternalInit.cs.pp",
+        "contentFiles/cs/net20/IsExternalInit/IsExternalInit.cs.pp",
+        "contentFiles/cs/net40/IsExternalInit/IsExternalInit.cs.pp",
+        "contentFiles/cs/net5.0/IsExternalInit/IsExternalInit.cs.pp",
+        "contentFiles/cs/netstandard1.0/IsExternalInit/IsExternalInit.cs.pp",
+        "contentFiles/cs/netstandard2.0/IsExternalInit/IsExternalInit.cs.pp",
+        "icon.png",
+        "isexternalinit.1.0.2.nupkg.sha512",
+        "isexternalinit.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "IsExternalInit >= 1.0.2"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jude.abormegah\\.nuget\\packages\\": {},
@@ -53,6 +90,14 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "IsExternalInit": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -44,7 +44,7 @@ namespace congestion.calculator
             if (vehicle == null) return false;
             var vehicleType = vehicle.GetVehicleType();
             return vehicleType.Equals(TollFreeVehicles.Motorcycle.ToString()) ||
-                   vehicleType.Equals(TollFreeVehicles.Tractor.ToString()) ||
+                   vehicleType.Equals(TollFreeVehicles.Bus.ToString()) ||
                    vehicleType.Equals(TollFreeVehicles.Emergency.ToString()) ||
                    vehicleType.Equals(TollFreeVehicles.Diplomat.ToString()) ||
                    vehicleType.Equals(TollFreeVehicles.Foreign.ToString()) ||
@@ -94,7 +94,7 @@ namespace congestion.calculator
         private enum TollFreeVehicles
         {
             Motorcycle = 0,
-            Tractor = 1,
+            Bus = 1,
             Emergency = 2,
             Diplomat = 3,
             Foreign = 4,

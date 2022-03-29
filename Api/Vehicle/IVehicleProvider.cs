@@ -2,5 +2,6 @@
 {
     public interface IVehicleProvider
     {
+        Vehicle FindVehicle(string vehicleRegistration);
     }
 }

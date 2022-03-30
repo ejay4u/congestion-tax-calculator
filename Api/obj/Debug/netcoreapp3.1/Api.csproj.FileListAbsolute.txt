@@ -17,3 +17,9 @@ C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\obj\Debug\net
 C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\obj\Debug\netcoreapp3.1\Api.dll
 C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\obj\Debug\netcoreapp3.1\Api.pdb
 C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\obj\Debug\netcoreapp3.1\Api.genruntimeconfig.cache
+C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\obj\Debug\netcoreapp3.1\Api.csproj.CopyComplete
+C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\bin\Debug\netcoreapp3.1\congestion-tax-calculator.dll
+C:\Users\jude.abormegah\source\repos\congestion-tax-calculator\Api\bin\Debug\netcoreapp3.1\congestion-tax-calculator.pdb

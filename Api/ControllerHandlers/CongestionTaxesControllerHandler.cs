@@ -2,7 +2,8 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Api.Models;
-using Api.Vehicle;
+using Api.Providers;
+using congestion.calculator;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
@@ -10,11 +11,14 @@ namespace Api.ControllerHandlers
 {
     public class CongestionTaxesControllerHandler : ICongestionTaxesControllerHandler
     {
+        private readonly ICongestionTaxCalculator congestionTaxCalculator;
         private readonly IVehicleProvider vehicleProvider;
 
-        public CongestionTaxesControllerHandler(IVehicleProvider vehicleProvider)
+        public CongestionTaxesControllerHandler(IVehicleProvider vehicleProvider,
+            ICongestionTaxCalculator congestionTaxCalculator)
         {
             this.vehicleProvider = vehicleProvider;
+            this.congestionTaxCalculator = congestionTaxCalculator;
         }
 
 
@@ -31,7 +35,9 @@ namespace Api.ControllerHandlers
 
             var vehicle = vehicleProvider.FindVehicle(congestionTaxInputModel.VehicleRegistration);
 
-            return new OkObjectResult(60);
+            var result = congestionTaxCalculator.GetTax(vehicle, datetime);
+
+            return new OkObjectResult(result);
         }
 
         public async Task<IStatusCodeActionResult> GetAsync(string vehicleRegistration, DateTime dateTime,
@@ -45,7 +51,9 @@ namespace Api.ControllerHandlers
 
             var vehicle = vehicleProvider.FindVehicle(vehicleRegistration);
 
-            return new OkObjectResult(60);
+            var result = congestionTaxCalculator.GetTax(vehicle, new[] { dateTime });
+
+            return new OkObjectResult(result);
         }
     }
 }

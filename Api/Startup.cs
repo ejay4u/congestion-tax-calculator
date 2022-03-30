@@ -1,5 +1,6 @@
 using Api.ControllerHandlers;
-using Api.Vehicle;
+using Api.Providers;
+using congestion.calculator.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -40,6 +41,7 @@ namespace Api
 
             _ = services.AddSingleton<ICongestionTaxesControllerHandler, CongestionTaxesControllerHandler>();
             _ = services.AddSingleton<IVehicleProvider, VehicleProvider>();
+            _ = services.AddCongestionTaxCalculator();
         }
 
         /// <summary>

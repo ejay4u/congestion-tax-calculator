@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Api.Vehicle
+namespace Common
 {
     public record Vehicle(Guid VehicleId, string VehicleType)
     {

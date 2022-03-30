@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "congestion-tax-calculator",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Congestion-tax-calculator.UnitTests", "tests\Congestion-tax-calculator.UnitTests\Congestion-tax-calculator.UnitTests.csproj", "{2C041908-CAB1-45C3-BF75-A2728191E606}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{6A8075BA-C45F-44EB-AEF8-3842D0290A2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{6A8075BA-C45F-44EB-AEF8-3842D0290A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FE49AA68-A9B3-4B84-BB68-53A2667EBD64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6A8075BA-C45F-44EB-AEF8-3842D0290A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A8075BA-C45F-44EB-AEF8-3842D0290A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A8075BA-C45F-44EB-AEF8-3842D0290A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE49AA68-A9B3-4B84-BB68-53A2667EBD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE49AA68-A9B3-4B84-BB68-53A2667EBD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE49AA68-A9B3-4B84-BB68-53A2667EBD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE49AA68-A9B3-4B84-BB68-53A2667EBD64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

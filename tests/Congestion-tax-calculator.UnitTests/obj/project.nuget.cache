@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ObnjrCqcVGyRINzu3V3Ej2wnn4o50N11ZFJdtbXXci6NHRKJC0J4UIZwnXlLM5pzBui1Askbp+dBk+41j2x07g==",
+  "dgSpecHash": "ObYX3FV5BzFIm7AqFLhrQckzOwenau9YHvgj0aQ9mcEEkfMKmd25ElvAYbHihZ0b/MFnxsw2UJfm//k890jWwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\tests\\Congestion-tax-calculator.UnitTests\\Congestion-tax-calculator.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\jude.abormegah\\.nuget\\packages\\fluentassertions\\6.5.1\\fluentassertions.6.5.1.nupkg.sha512",
     "C:\\Users\\jude.abormegah\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\jude.abormegah\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\jude.abormegah\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
     "C:\\Users\\jude.abormegah\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nSZ9UXN+GXJsxdcxrBaBR+Ibk+Msya6EBOs/7RUIizcAE/eIzb2LCGcZN1E/1RmtRDbet0BSBx2C6aBpE+4BgA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jude.abormegah\\source\\repos\\congestion-tax-calculator\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jude.abormegah\\.nuget\\packages\\isexternalinit\\1.0.2\\isexternalinit.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

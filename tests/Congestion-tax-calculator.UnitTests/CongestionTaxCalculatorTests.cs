@@ -1,6 +1,6 @@
 using System;
+using Common;
 using congestion.calculator;
-using FakeItEasy;
 using FluentAssertions;
 using Xunit;
 
@@ -28,26 +28,27 @@ namespace Congestion_tax_calculator.UnitTests
         public void GetTax_GivenNonExemptVehicle_ShouldReturnTax(string datetime, int expectedTax)
         {
             // Arrange
-            var car = new Car();
+            var vehicle = new Vehicle(Guid.NewGuid(), "car");
             var congestionTaxCalculator = new CongestionTaxCalculator();
 
             // Act
-            var result = congestionTaxCalculator.GetTax(car, new[] { DateTime.Parse(datetime) });
+            var result = congestionTaxCalculator.GetTax(vehicle, new[] { DateTime.Parse(datetime) });
 
             // Assert
             result.Should().Be(expectedTax);
         }
 
         [Theory]
-        [InlineData("2013-01-14 21:00:00", 0)]
-        [InlineData("2013-02-08 06:27:00", 0)]
-        [InlineData("2013-02-08 15:29:00", 0)]
-        [InlineData("2013-02-08 16:48:00", 0)]
-        public void GetTax_GivenTaxExemptVehicle_ShouldReturnZero(string datetime, int expectedTax)
+        [InlineData("2013-01-14 21:00:00", "bus", 0)]
+        [InlineData("2013-02-08 06:27:00", "foreign", 0)]
+        [InlineData("2013-02-08 15:29:00", "military", 0)]
+        [InlineData("2013-02-08 16:48:00", "emergency", 0)]
+        [InlineData("2013-02-08 16:01:00", "diplomat", 0)]
+        [InlineData("2013-02-08 18:35:00", "motorcycle", 0)]
+        public void GetTax_GivenTaxExemptVehicle_ShouldReturnZero(string datetime, string vehicleType, int expectedTax)
         {
             // Arrange
-            var vehicle = A.Fake<Vehicle>();
-            A.CallTo(() => vehicle.GetVehicleType()).ReturnsLazily(() => "Tractor");
+            var vehicle = new Vehicle(Guid.NewGuid(), vehicleType);
             var congestionTaxCalculator = new CongestionTaxCalculator();
 
             // Act

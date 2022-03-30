@@ -1,4 +1,6 @@
-﻿namespace Api.Vehicle
+﻿using Common;
+
+namespace Api.Providers
 {
     public interface IVehicleProvider
     {

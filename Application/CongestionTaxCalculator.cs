@@ -1,8 +1,9 @@
 using System;
+using Common;
 
 namespace congestion.calculator
 {
-    public class CongestionTaxCalculator
+    public class CongestionTaxCalculator : ICongestionTaxCalculator
     {
         /**
          * Calculate the total toll fee for one day
@@ -39,18 +40,6 @@ namespace congestion.calculator
             return totalFee;
         }
 
-        private bool IsTollFreeVehicle(Vehicle vehicle)
-        {
-            if (vehicle == null) return false;
-            var vehicleType = vehicle.GetVehicleType();
-            return vehicleType.Equals(TollFreeVehicles.Motorcycle.ToString()) ||
-                   vehicleType.Equals(TollFreeVehicles.Bus.ToString()) ||
-                   vehicleType.Equals(TollFreeVehicles.Emergency.ToString()) ||
-                   vehicleType.Equals(TollFreeVehicles.Diplomat.ToString()) ||
-                   vehicleType.Equals(TollFreeVehicles.Foreign.ToString()) ||
-                   vehicleType.Equals(TollFreeVehicles.Military.ToString());
-        }
-
         public int GetTollFee(DateTime date, Vehicle vehicle)
         {
             if (IsTollFreeDate(date) || IsTollFreeVehicle(vehicle)) return 0;
@@ -68,6 +57,18 @@ namespace congestion.calculator
             if (hour == 17 && minute >= 0 && minute <= 59) return 13;
             if (hour == 18 && minute >= 0 && minute <= 29) return 8;
             return 0;
+        }
+
+        private bool IsTollFreeVehicle(Vehicle vehicle)
+        {
+            if (vehicle == null) return false;
+            var vehicleType = vehicle.VehicleType;
+            return vehicleType.Equals(TollFreeVehicles.Motorcycle.ToString(), StringComparison.OrdinalIgnoreCase) ||
+                   vehicleType.Equals(TollFreeVehicles.Bus.ToString(), StringComparison.OrdinalIgnoreCase) ||
+                   vehicleType.Equals(TollFreeVehicles.Emergency.ToString(), StringComparison.OrdinalIgnoreCase) ||
+                   vehicleType.Equals(TollFreeVehicles.Diplomat.ToString(), StringComparison.OrdinalIgnoreCase) ||
+                   vehicleType.Equals(TollFreeVehicles.Foreign.ToString(), StringComparison.OrdinalIgnoreCase) ||
+                   vehicleType.Equals(TollFreeVehicles.Military.ToString(), StringComparison.OrdinalIgnoreCase);
         }
 
         private bool IsTollFreeDate(DateTime date)

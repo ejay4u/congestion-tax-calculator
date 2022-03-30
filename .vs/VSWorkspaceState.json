@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Common\\Application.Common"
   ],
-  "SelectedNode": "\\congestion-tax-calculator-net-core.sln",
+  "SelectedNode": "\\Common",
   "PreviewInSolutionExplorer": false
 }
